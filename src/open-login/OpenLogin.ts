@@ -250,8 +250,6 @@ class OpenLogin {
   async getLoginId(loginParams: LoginParams & Partial<BaseRedirectParams>): Promise<string> {
     if (!this.sessionManager) throw InitializationError.notInitialized();
     console.log()
-    var newOptions = this.options;
-    newOptions.clientId = "hellooooooooooo";
     const dataObject: OpenloginSessionConfig = {
     //   options: newOptions,
       options:this.options,
