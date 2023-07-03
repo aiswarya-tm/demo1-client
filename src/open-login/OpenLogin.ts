@@ -251,7 +251,6 @@ class OpenLogin {
     if (!this.sessionManager) throw InitializationError.notInitialized();
     console.log()
     const dataObject: OpenloginSessionConfig = {
-    //   options: newOptions,
       options:this.options,
       params: loginParams,
     };
